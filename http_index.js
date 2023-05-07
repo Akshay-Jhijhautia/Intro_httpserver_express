@@ -23,12 +23,18 @@ const server = http.createServer(function listener(request, response){
     */  
 
     //console.log("Incoming request details", request);
-    //console.log("Response object details",response);
+    //console.log("Response object details", response);
 
     if(request.url === '/home') {
         // if we make a request on '/home', this if block will be executed
         console.log(request.method); // Will output the nature to request made using http server ex. GET, PUT, POST, DELETE
         response.end('Welcome to home');
+        /* response.end only consideres a string as an argument.
+            But we can use JSON.stringify(), to send the object as well.
+            Http module does not have .send() functionality. 
+            response.write() -> it does not send the request immediately, it sends the data in chunks,
+            but we shoud use with response.write() with response.end(), but in many cases response.end(),
+            is sufficient for our purposes.*/    
     }
     console.log("Request Received"); 
 
