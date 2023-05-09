@@ -23,7 +23,7 @@ const server = http.createServer(function listener(request, response){
     */  
 
     //console.log("Incoming request details", request);
-    //console.log("Response object details", response);
+    //console.log("Response object details", response)
 
     if(request.url === '/home') {
         // if we make a request on '/home', this if block will be executed
