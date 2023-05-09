@@ -25,3 +25,6 @@
 6. `fetch` -> fetch is a replacement of, XML HTTP request.
 
 7. `express.js` -> used for setting up servers in node. There are other packages also available for purpose of setting up servers in node.
+
+8. `npx` -> stands for node package execute. It is simply an NPM package runner. It allows developers to execute any javascript package available on the NPM registry without even installing it. NPX is installed automatically with NPM version 5.2.0 and above.
+   ex. to run nodemon do -> npx nodemon index.js
